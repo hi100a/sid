@@ -760,9 +760,21 @@ input, button{
     box-sizing: border-box;
     padding-left: 20px;
 }
-#section3 .slick-list{
-    position: relative;
+
+#section3 .slide_left{
+    display: flex;
+    align-items: center;
+
 }
+#section3 .slide_left .slick-list {
+    border-radius: 30px;
+    overflow: hidden;
+    /*
+    position: relative;
+    top: 50%;
+    margin-top: -50%;*/
+}
+
 
 /*********************section4****************************/
 #section4{
