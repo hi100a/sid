@@ -45,6 +45,7 @@ h3{
     line-height: 50px;
     font-size: 1.1rem;
     font-weight: 300;
+    text-align: left;
 }
 .click_btn:hover{
     background-color: #fff;
@@ -78,6 +79,202 @@ h3{
     border-right: 1px solid #fff;
     transform: rotate(-45deg)  translate(35px,30px);
 }
+
+
+/*********** bars_click********/
+
+ #bars_pop {
+    /* display: none; */
+    position: fixed;
+    top: 0; right: -100%;
+    z-index: 10;
+    background-color: #fff;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    /* transform: translateX(-100%); */
+    /* position: fixed;
+    right:-50%; top:0; */
+}
+#bars_pop .inner {
+    padding: 0 30px;
+}
+#bars_pop  .nav_top{
+    width: 100%;
+    height: 40px;
+    margin-top: 5%;
+    display: flex;
+    flex-wrap: no-wrap;
+    flex-direction: row;
+    justify-content: space-between;
+}
+#bars_pop  .nav_top h1{
+    width: 18%;
+  
+}
+#bars_pop  .nav_top h1 img{
+    width: 130px;
+}
+#bars_pop  .nav_top ul{
+    /* width: 10%; */
+    display: flex;
+    flex-wrap: no-wrap;
+    flex-direction: row;
+}
+#bars_pop  .nav_top ul img{
+    width: 25px;
+    margin-right: 10px;
+}
+#bars_pop  .login{
+    display: flex;
+    flex-wrap: no-wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 30px;
+    color: #B1B1B1;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #B1B1B1;
+}
+#bars_pop .login_box{
+    display: flex;
+    flex-wrap: no-wrap;
+    flex-direction: row;
+}
+#bars_pop .login_txt {
+    margin-right: 10px;
+    padding: 3px 10px 3px 10px;
+    border: 1px solid #B1B1B1;
+    border-radius: 20px;
+}
+#bars_pop .login_txt:hover {
+    color: #86A614;
+    border: 1px solid #86A614;
+}
+#bars_pop nav{
+    margin-top: 30px;
+}
+#bars_pop nav .nav_left{
+    width: 50%;
+    height: 35vh;
+    color: #333333;
+    box-sizing: border-box;
+    overflow-y:scroll;
+}
+#bars_pop nav .depth1_list >li >a:hover{
+    color: #86A614;
+}
+#bars_pop nav .depth2_list >li >a:hover{
+    color: #86A614;
+}
+
+
+#bars_pop nav .nav_left::-webkit-scrollbar{
+    width: 3px;
+    border-radius: 30px;
+}
+#bars_pop nav .nav_left::-webkit-scrollbar-thumb{
+    background-color: #000;
+    border-radius: 30px;
+}
+#bars_pop nav .nav_left::-webkit-scrollbar-track{
+    background-color: #D9D9D9;
+    border-radius: 30px;
+}
+
+#bars_pop .depth1{
+    font-family : 'Gmarket';  
+    font-weight: 600;
+    font-size: 1.2rem;
+    line-height: 2.5rem;
+
+}
+/* #header .bars_click .depth2_list{
+    display: none;
+} */
+#bars_pop .depth1_list > li.link_on{
+    display: block;
+}
+#bars_pop .depth2_list .depth2{
+    font-family: 'Noto Sans KR';
+    font-weight: 400;
+    margin-left: 10px;
+    line-height: 1.7rem;
+    font-size: 1.3rem;
+
+}
+#bars_pop .depth2_list .depth2 > a::before{
+    content: '-';
+    color: #555555;
+    font-size: 1rem;
+   margin-right: 1rem;
+}
+#bars_pop nav .nav_right{
+    width: 50%;
+    height: 35vh;
+    box-sizing: border-box; 
+    /* border-left : 1px solid #86A614 ; */
+    font-size: 1rem;
+    line-height: 1.8rem;
+    color: #333333;
+    overflow-y:scroll;
+}
+#bars_pop nav .nav_right::-webkit-scrollbar{
+    width: 3px;
+    border-radius: 30px;
+}
+#bars_pop nav .nav_right::-webkit-scrollbar-thumb{
+    background-color: #000;
+    border-radius: 30px;
+}
+#bars_pop nav .nav_right::-webkit-scrollbar-track{
+    background-color: #D9D9D9;
+    border-radius: 30px;
+}
+
+#bars_pop .bars_menu_depth3 li{
+    margin-left: 15px;
+}
+#bars_pop .bars_menu_depth3 li:hover{
+    color:#86A614
+}
+
+
+#bars_pop .img_banner{
+    margin-top: 20px;
+    width: 100%;
+    height: 25vh;
+}
+#bars_pop .img_banner img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 30px;
+}
+
+#bars_pop .bot_sns{
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+    border-top: 1px solid #B1B1B1;
+}
+#bars_pop .bot_sns p{
+    margin-top: 20px;
+}
+#bars_pop .bot_sns p:hover{
+    color: #86A614;
+}
+
+#bars_pop .bars_menu_function{
+    display: none;
+}
+#bars_pop .bars_menu_ingre{
+    display: none;
+}
+#bars_pop .bars_menu_worry{
+    display: none;
+}
+
+
 
 /*********************header****************************/
 .background{
@@ -366,184 +563,13 @@ input, button{
     border: 1px solid #86A614;
 }
 
-/*********** bars_click********/
-
-#header .bars_click{
-    /* display: none; */
-    position: absolute;
-    top: 0;left: 0;
-    z-index: 6;
-    background-color: #fff;
-    width: 100%;
-    height: 100vh;
-    overflow: hidden;
- 
-}
-#header .bars_click .nav_top{
-    width: 100%;
-    height: 40px;
-    margin-top: 5%;
-    display: flex;
-    flex-wrap: no-wrap;
-    flex-direction: row;
-    justify-content: space-between;
-}
-#header .bars_click .nav_top h1{
-    width: 18%;
-  
-}
-#header .bars_click .nav_top h1 img{
-    width: 130px;
-}
-#header .bars_click .nav_top ul{
-    /* width: 10%; */
-    display: flex;
-    flex-wrap: no-wrap;
-    flex-direction: row;
-}
-#header .bars_click .nav_top ul img{
-    width: 25px;
-    margin-right: 10px;
-}
-#header .bars_click .login{
-    display: flex;
-    flex-wrap: no-wrap;
-    flex-direction: row;
-    justify-content: space-between;
-    margin-top: 30px;
-    color: #B1B1B1;
-    padding-bottom: 20px;
-    border-bottom: 1px solid #B1B1B1;
-}
-#header .bars_click .login_box{
-    display: flex;
-    flex-wrap: no-wrap;
-    flex-direction: row;
-}
-#header .bars_click .login_txt {
-    margin-right: 10px;
-    padding: 3px 10px 3px 10px;
-    border: 1px solid #B1B1B1;
-    border-radius: 20px;
-}
-#header .bars_click .login_txt:hover {
-    color: #86A614;
-    border: 1px solid #86A614;
-}
-#header .bars_click nav{
-    margin-top: 30px;
-}
-#header .bars_click nav .nav_left{
-    width: 50%;
-    height: 35vh;
-    color: #333333;
-    box-sizing: border-box;
-    overflow-y:scroll;
-}
-
-#header .bars_click nav .nav_left::-webkit-scrollbar{
-    width: 3px;
-    border-radius: 30px;
-}
-#header .bars_click nav .nav_left::-webkit-scrollbar-thumb{
-    background-color: #000;
-    border-radius: 30px;
-}
-#header .bars_click nav .nav_left::-webkit-scrollbar-track{
-    background-color: #D9D9D9;
-    border-radius: 30px;
-}
-
-#header .bars_click .depth1{
-    font-family : 'Gmarket';  
-    font-weight: 600;
-    font-size: 1.2rem;
-    line-height: 2.5rem;
-
-}
-/* #header .bars_click .depth2_list{
-    display: none;
-} */
-#header .bars_click .depth1_list > li.link_on{
-    display: block;
-}
-#header .bars_click .depth2_list .depth2{
-    font-family: 'Noto Sans KR';
-    font-weight: 400;
-    margin-left: 10px;
-    line-height: 1.7rem;
-    font-size: 1.3rem;
-
-}
-#header .bars_click .depth2_list .depth2 > a::before{
-    content: '-';
-    color: #555555;
-    font-size: 1rem;
-   margin-right: 1rem;
-}
-#header .bars_click nav .nav_right{
-    width: 50%;
-    height: 35vh;
-    box-sizing: border-box; 
-    border-left : 1px solid #86A614 ;
-    font-size: 1rem;
-    line-height: 1.8rem;
-    color: #333333;
-    overflow-y:scroll;
-}
-#header .bars_click nav .nav_right::-webkit-scrollbar{
-    width: 3px;
-    border-radius: 30px;
-}
-#header .bars_click nav .nav_right::-webkit-scrollbar-thumb{
-    background-color: #000;
-    border-radius: 30px;
-}
-#header .bars_click nav .nav_right::-webkit-scrollbar-track{
-    background-color: #D9D9D9;
-    border-radius: 30px;
-}
-
-#header .bars_click  .bars_menu_depth3 li{
-    margin-left: 15px;
-}
-#header .bars_click  .bars_menu_depth3 li:hover{
-    color:#86A614
-}
-
-
-#header .bars_click .img_banner{
-    margin-top: 20px;
-    width: 100%;
-    height: 25vh;
-}
-#header .bars_click .img_banner img{
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    border-radius: 30px;
-}
-
-#header .bars_click .bot_sns{
-    margin-top: 20px;
-    margin-left: 20px;
-    margin-right: 20px;
-    border-top: 1px solid #B1B1B1;
-}
-#header .bars_click .bot_sns p{
-    margin-top: 20px;
-}
-#header .bars_click .bot_sns p:hover{
-    color: #86A614;
-}
-
 
 /*********************section1****************************/
 
 
 #section1{
     /* display: none; */
-    height: 100vh;
+    /* height: 100vh; */
     /* overflow: hidden; */
     position: relative;
     width: 100%;
@@ -601,9 +627,8 @@ input, button{
 #section1 .notice{
     position: absolute;
     left: 0;
-    bottom:62px;
-    width: 650px;
-    height: 60px;
+    bottom:2px;
+
     /* overflow: hidden; */
     background-color: violet;
    box-sizing: border-box;
@@ -697,6 +722,7 @@ input, button{
 }
 
 /*********************section3****************************/
+
 #section3{
     margin-top: 200px;
 }
@@ -720,9 +746,28 @@ input, button{
     margin-top: 40px;
 }
 
+#section3 .box{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    }
+#section3 .slide_left{
+    width: 50%;
+    box-sizing: border-box;
+}
+#section3 .slide_right{
+    width: 50%;
+    box-sizing: border-box;
+    padding-left: 20px;
+}
+#section3 .slick-list{
+    position: relative;
+}
+
 /*********************section4****************************/
 #section4{
     margin-top: 200px;
+    overflow: hidden;
 }
 
 #section4 .title{
@@ -735,7 +780,7 @@ input, button{
 #section4 .img_box {
     width: 70%;
     justify-content: center;
-    background-color: #B1B1B1;
+    /* background-color: #B1B1B1; */
 }
 #section4 .img_box  img{
     width: 100%;
@@ -769,6 +814,7 @@ input, button{
     background-size: 100%;
     background-position: center;
     background-attachment: fixed;
+    /* background-repeat: no-repeat; */
 }
 #section5 .banner{
     margin: -10% auto 0;
@@ -783,7 +829,7 @@ input, button{
     line-height: 2rem;
 }
 #section5 .brand .txt_big{
-    line-height: 6rem;
+    line-height: 4rem;
 }
 #section5 .brand .txt_big::after{
     content: '';
@@ -793,10 +839,39 @@ input, button{
     background-color: #86A614;
 }
 
-#section5 .banner .brand .txt{
+#section5 .brand .name{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    margin: 0 auto;
+    justify-content: center;
+    
+}
+#section5 .brand .name .logo{
+    font-family : 'Gmarket'; 
+    color: #86A614;
+    font-weight: 600; 
     font-size: 2rem;
     line-height: 4rem;
+    border-bottom: 4px solid #333;
+    padding: 0 20px;
+    margin: 0 30px;
+   
 }
+#section5 .brand .name .logo:hover{
+    opacity: 1;
+}
+#section5 .brand .txt{
+    font-size: 1rem;
+    line-height: 1.5rem;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+#section5 .brand .click_btn{
+    
+    margin: 0 auto;
+}
+
 
 #section5 .banner img{
     width: 80%;
@@ -1020,6 +1095,27 @@ input, button{
         padding-bottom: 1rem;
     }
 
+}
 
+/**************** mata 모바일 520***********/
+@media all and (max-width:520px) {
+    #bars_pop .login > p{
+        display: none;
+    }
+    #section1 .main_slide_box .product {
+        /* position: absolute;
+        top: 5%;
+        left: 10%;
+        */
+        /* width: 100%;  */
+        top:20%
+    }
+    #section1 .main_slide_box .product img {
+        /* width: 65%;
+        height: 80vh;
+        object-fit: contain; */
+        height: auto;
+        width: 80%;object-fit: contain;
+    }
 
 }

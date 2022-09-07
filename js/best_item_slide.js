@@ -10,7 +10,7 @@ $(function(){
         arrows: true,
         dots :true,
         autoplay : true,
-        autoplaySpeed : 3000,
+        autoplaySpeed : 3500,
 
         responsive: [
           {
@@ -23,7 +23,7 @@ $(function(){
             }
           },
           {
-            breakpoint: 480,
+            breakpoint: 520,
             settings: {
               arrows: false,
               centerMode: true,
