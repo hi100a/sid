@@ -3,13 +3,13 @@ $(function(){
         dots: true,
         infinite: true,
         centerMode: true,
-        centerPadding: '60px',
+        // centerPadding: '60px',
         slidesToShow: 5,
         slidesToScroll: 3,
 
         arrows: true,
         dots :true,
-        autoplay : true,
+        // autoplay : true,
         autoplaySpeed : 3500,
 
         responsive: [
@@ -17,8 +17,9 @@ $(function(){
             breakpoint: 1200,
             settings: {
               arrows: false,
+              infinite: true,
               centerMode: true,
-              centerPadding: '40px',
+              // centerPadding: '40px',
               slidesToShow: 3
             }
           },
@@ -26,8 +27,9 @@ $(function(){
             breakpoint: 520,
             settings: {
               arrows: false,
+              infinite: true,
               centerMode: true,
-              centerPadding: '40px',
+              // centerPadding: '40px',
               slidesToShow: 1
             }
           }

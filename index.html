@@ -30,9 +30,28 @@
 <script src="js/main_slide.js"> </script>
 <script src="js/best_item_slide.js"> </script>
 <script src="js/ingre_slick.js"> </script>
+<script src="js/popup.js"> </script>
 </head>
 
 <body>
+  <!----popup--->
+  <div class="top-pop-wrap"id="popup">
+    <div class="top-pop-box">
+        <div>
+            <img src="images/ad_popup.png" alt="광고팝업">
+        </div>
+        /* 닫기버튼*/
+        <a href="#" title="닫기" class="btn-pop-close">
+        <span class="hide">닫기</span>
+        </a>
+        <p class="do-not-open-box">
+            <input type="checkbox" id="do-not-open" />    
+            <label for="do-not-open" title="오늘 그만 보기"></label>
+        </p>
+    </div>
+</div>
+
+
     <!------------- bars_click -------------->
     <div id="bars_pop"class="bars_click">
       <div class="inner">
@@ -62,7 +81,7 @@
                 <li class="depth2"><a href="#" data-src="#bars_all">ALL</a></li>
                 <li class="depth2"><a href="#" data-src="#bars_function">기능별</a></li>
                 <li class="depth2"><a href="#" data-src="#bars_ingre">성분별</a></li>
-                <li class="depth2"><a href="#" data-src="#bars_worry">ALL</a></li>
+                <li class="depth2"><a href="#" data-src="#bars_worry">고민별</a></li>
               </ul>
             </li>
             <li class="depth1"><a href="#">BRAND</a></li>
@@ -419,13 +438,13 @@
 
             <div id="notice_slide">
               <div class="container">
-             <p class="txt">시드물 공병 이벤트 5차 진행 연장 안내</p>
-             <p class="txt">택배사 파업으로 인한 배송지연 안내</p>
-             <p class="txt">임신중이나 수유중에는 사용하지 않는 것이 좋은 제품 list</p>
+             <p class="txt"><a href="#">시드물 공병 이벤트 5차 진행 연장 진행안내 ( - 10/27)</a></p>
+             <p class="txt"><a href="#">10월 택배사 파업으로 인한 배송지연 안내 확인 부탁드립니다</a></p>
+             <p class="txt"><a href="#">임신중이나 수유중에는 사용하지 않는 것이 좋은 제품 list</a></p>
             </div><!--container-->
             </div><!--notice_slide-->
 
-            <p class="arrow"></p>
+            <!-- <p class="arrow"></p> -->
           </div><!--notice_box-->
         
     
@@ -441,7 +460,7 @@
     <div class="inner">
       <h2>NEW PRODUCT</h2>
 
-      <div class="flex">
+      <div class="content_list flex">
       <div class="content" id="content_01">
         <p class="img"><a href="#"><img src="images/sec2_img_01.png"></img></a></p>
         <div class="txt_box">
@@ -539,7 +558,7 @@
           </div><!--txt_box-->
 
           <div class="txt_box">
-            <h3>5Propolis</h3>
+            <h3>Propolis</h3>
             <p class="txt">벌들이 자신의 집을 지키기 위해 <br>나무에서 얻은 플라보노이드로 
               만들어낸 성분인 프로폴리스.<br>
               멀티 스킨케어와 자연 꿀광 피부에 좋은 성분입니다. </p>
@@ -565,8 +584,8 @@
             <img src="images/sec4_img_01.png">
           </div><!--img_box-->
           <div class="txt_box">
-            <p class="txt_box_tit">0시드물 센텔라<br>구스팟 크림 30ml</p>
-            <p class="txt_box_txt">병풀 핵심성분 1.5% 입소문난 바로 그제품</p>
+            <p class="txt_box_tit">닥터트럽 스킨<br>리터닝 징크크림 60g</p>
+            <p class="txt_box_txt">퓨어징크옥사이드 10% 민감한 스팟 진정 관리!</p>
           </div>
         </a>
         </div><!--slider_item-->
@@ -580,8 +599,8 @@
             <img src="images/sec4_img_02.png">
           </div><!--img_box-->
           <div class="txt_box">
-            <p class="txt_box_tit">1시드물 센텔라<br>구스팟 크림 30ml</p>
-            <p class="txt_box_txt">병풀 핵심성분 1.5% 입소문난 바로 그제품</p>
+            <p class="txt_box_tit">알파 화이트닝 파워앰플 12ml</p>
+            <p class="txt_box_txt">알파-알부틴 2% 꽈리열매추출물 71%</p>
           </div>
         </a>
         </div><!--slider_item-->
@@ -594,8 +613,8 @@
             <img src="images/sec4_img_03.png">
           </div><!--img_box-->
           <div class="txt_box">
-            <p class="txt_box_tit">2시드물 센텔라<br>구스팟 크림 30ml</p>
-            <p class="txt_box_txt">병풀 핵심성분 1.5% 입소문난 바로 그제품</p>
+            <p class="txt_box_tit">이데베논 탄력<br>수분 로션 128 ml</p>
+            <p class="txt_box_txt">탄력의 어머니 이데베논을 담은 피부사랑</p>
           </div>
         </a>
         </div><!--slider_item-->
@@ -608,8 +627,8 @@
             <img src="images/sec4_img_04.png">
           </div><!--img_box-->
           <div class="txt_box">
-            <p class="txt_box_tit">3시드물 센텔라<br>구스팟 크림 30ml</p>
-            <p class="txt_box_txt">병풀 핵심성분 1.5% 입소문난 바로 그제품</p>
+            <p class="txt_box_tit">EGF 더마 패드 45매</p>
+            <p class="txt_box_txt">리얼 더마 집중 케어패드</p>
           </div>
         </a>
         </div><!--slider_item-->
@@ -619,11 +638,11 @@
         <div class="slider_item">
           <a href="#">
           <div class="img_box">
-            <img src="images/sec4_img_01.png">
+            <img src="images/sec4_img_05.png">
           </div><!--img_box-->
           <div class="txt_box">
-            <p class="txt_box_tit">4시드물 센텔라<br>구스팟 크림 30ml</p>
-            <p class="txt_box_txt">병풀 핵심성분 1.5% 입소문난 바로 그제품</p>
+            <p class="txt_box_tit">휴먼 올리고 리페어<br>아이크림 30g</p>
+            <p class="txt_box_txt">깊은주름/화이트닝 은행잎수43%와 EGF 이펙트</p>
           </div>
         </a>
         </div><!--slider_item-->
@@ -633,11 +652,11 @@
         <div class="slider_item">
           <a href="#">
           <div class="img_box">
-            <img src="images/sec4_img_01.png">
+            <img src="images/sec4_img_06.png">
           </div><!--img_box-->
           <div class="txt_box">
-            <p class="txt_box_tit">5시드물 센텔라<br>구스팟 크림 30ml</p>
-            <p class="txt_box_txt">병풀 핵심성분 1.5% 입소문난 바로 그제품</p>
+            <p class="txt_box_tit">어성초 CP 비누 85g</p>
+            <p class="txt_box_txt">어성초로 만든 자연 숙성 수제 비누</p>
           </div>
         </a>
         </div><!--slider_item-->
@@ -682,23 +701,31 @@
 
       <div class="benefit_list flex">
         <div class="benefit">
-          <p class="icon"><a href="#"><img src="images/sec6_icon_01.png"></a></p>
-          <p class="txt">회원가입축하<br>15% 할인쿠폰 지급</p>
+          <a href="#">
+          <p class="icon"><img src="images/sec6_icon_01.png"></p>
+          <p class="txt">회원가입축하<span>15% 할인쿠폰 지급</p>
+          </a>
         </div>
 
         <div class="benefit">
-          <p class="icon"><a href="#"><img src="images/sec6_icon_02.png"></a></p>
-          <p class="txt">마케팅 수신 동의시<br>1000P 적립금 지급</p>
+          <a href="#">
+          <p class="icon"><img src="images/sec6_icon_02.png"></p>
+          <p class="txt">마케팅 수신 동의시<span>1000P 적립금 지급</p>
+          </a>
         </div>
 
         <div class="benefit">
-          <p class="icon"><a href="#"><img src="images/sec6_icon_03.png"></a></p>
-          <p class="txt">기념일 축하<br>15% 할인쿠폰 지급</p>
+          <a href="#">
+          <p class="icon"><img src="images/sec6_icon_03.png"></p>
+          <p class="txt">기념일 축하<span>15% 할인쿠폰 지급</p>
+          </a>
         </div>
 
         <div class="benefit">
-          <p class="icon"><a href="#"><img src="images/sec6_icon_04.png"></a></p>
-          <p class="txt">휴면회원 해제시<br>10000P 적립금 지급</p>
+          <a href="#">
+          <p class="icon"><img src="images/sec6_icon_04.png"></p>
+          <p class="txt">휴면회원 해제시<span>10000P 적립금 지급</p>
+          </a>
         </div>
       </div><!--benefit_list-->
     </div><!--inner-->
