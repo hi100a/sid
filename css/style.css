@@ -81,12 +81,13 @@ h3{
 }
 
 /*   ----popup--- */
- .top-pop-wrap{
-    position: absolute;
-    top: 5%; left: 5%;
-    z-index: 30;
+.divpop {
+    /* position: absolute;  */
+    z-index:999; top:50px; left:50px;
+    width:500px; height:520px;background-color:yellow;display:none;
 }
-
+.title_area {font-weight:bold;text-align:center;width:100%}
+.button_area {position:absolute;bottom:0;left:10px;} 
 
 /*********** bars_click********/
 

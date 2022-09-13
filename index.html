@@ -35,21 +35,15 @@
 
 <body>
   <!----popup--->
-  <div class="top-pop-wrap"id="popup">
-    <div class="top-pop-box">
-        <div>
-            <img src="images/ad_popup.png" alt="광고팝업">
-        </div>
-        /* 닫기버튼*/
-        <a href="#" title="닫기" class="btn-pop-close">
-        <span class="hide">닫기</span>
-        </a>
-        <p class="do-not-open-box">
-            <input type="checkbox" id="do-not-open" />    
-            <label for="do-not-open" title="오늘 그만 보기"></label>
-        </p>
+  <form name="notice_form">
+    <div id="divpop1" class="divpop">	
+      <div class="title_area"><img src="images/ad_popup.png"></div>
+       <div class="button_area">
+         <input type='checkbox' name='chkbox' id='todaycloseyn' value='Y'>오늘 하루 이 창을 열지 않음	
+         <a href='#' onclick="javascript:closeWin(1);"><B>[닫기]</B></a>
+       </div>
     </div>
-</div>
+  </form>
 
 
     <!------------- bars_click -------------->
