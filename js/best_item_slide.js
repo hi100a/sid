@@ -5,12 +5,14 @@ $(function(){
         centerMode: true,
         // centerPadding: '60px',
         slidesToShow: 5,
-        slidesToScroll: 3,
+        slidesToScroll: 5,
+        
 
         arrows: true,
         dots :true,
-        // autoplay : true,
-        autoplaySpeed : 3500,
+        autoplay : true,
+        autoplaySpeed : 2000,
+        pauseOnHover : true,
 
         responsive: [
           {

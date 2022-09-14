@@ -155,8 +155,8 @@
 }
 
 #section1 .slick-dots li  button{
-    width: 10px;
-    height: 10px;
+    width: 15px;
+    height: 15px;
     margin-left: 10px;
     border-radius: 30px;
     background-color: #fff;
@@ -164,7 +164,7 @@
 }
 #section1 .slick-dots  .slick-active button{
     background-color: #D9D9D9;
-    width: 30px;
+    width: 40px;
 }
 
 /**************재료별 설명 슬릭 수정 **************/

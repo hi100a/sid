@@ -403,7 +403,11 @@ h3{
     font-weight: 600;
     padding-right: 3rem;
 }
+#header .nav_hover .menu_depth3  ul > li{
+    width: 33%;
+    /* box-sizing: border-box; */
 
+}
 #header .panels .menu_depth2 >ul li:hover{
     color: #86A614;
 }
@@ -432,7 +436,7 @@ h3{
     /* background-color: aqua; */
 }
 #header .menu_depth3 li a{
-    margin:30px ;
+    /* margin:30px ; */
     text-align: left;
 }
 #header .menu_depth3 li a:hover{
@@ -644,15 +648,17 @@ input, button{
 #section1 .notice .notice_box{
     width: 650px;
     height: 60px;
-    line-height: 60px;
+    line-height: 40px;
     background-color: #86A614;
     color: #fff;
     padding: 10px 40px 10px 40px;
     z-index: 3;
+    box-sizing: border-box;
 
     display: flex;
     flex-wrap: no-wrap;
     flex-direction: row;
+
 }
 #section1 .notice .notice_box .tit{
     font-family : 'Gmarket';  
@@ -686,9 +692,7 @@ input, button{
     width: 90%;
     border-radius: 30px;
 }
-/* #section2 .content .main span{
-    font-size: 2rem;
-} */
+
 #section2 .content:nth-child(2) {
     margin-top: 30%;
    
@@ -866,7 +870,13 @@ input, button{
     flex-wrap: nowrap;
     margin: 0 auto;
     justify-content: center;
-    
+}
+#section5 .brand .name_2{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    margin: 0 auto;
+    justify-content: center;
 }
 #section5 .brand .name .logo{
     font-family : 'Gmarket'; 
@@ -898,7 +908,9 @@ input, button{
     width: 80%;
     border-radius: 30px;
 }
-
+#section5 span {
+    display: inline-block;
+  }
 
 /*********************section6****************************/
 #section6{
@@ -1035,12 +1047,12 @@ input, button{
         
         font-size: 1.1rem;
         font-weight: 300; */
-        width: 150px;
+        width: 160px;
         height: 40px;
         line-height: 40px;
     }
     .click_btn > p{
-        font-size: 0.9rem;
+        font-size: 1rem;
         
         transform: translateX(0);
         transform: translateX(20px);
@@ -1074,6 +1086,7 @@ input, button{
         font-size: 2rem;
         line-height: 2.8rem;
     }
+
 }
 
 /**************** mata 모바일  1000***********/
@@ -1085,6 +1098,11 @@ input, button{
         border-radius: 50%; */
         width: 130px;
         height: 130px;
+}
+#section5 .banner {
+    /* width: 80%;
+    border-radius: 30px; */
+    display: none;
 }
 }
 /**************** mata 모바일 768***********/
@@ -1214,7 +1232,20 @@ input, button{
         margin-top: 100px;
         overflow: hidden;
     }
-/************* sec6 benefit */
+
+
+/************768* sec5 brand */
+    #section5 .brand .name {
+        display: flex;
+        flex-direction: column;
+        /* flex-wrap: nowrap;
+        margin: 0 auto;
+        justify-content: center; */
+    }
+    #section5 .brand .txt span {
+        display: inline-block;
+      }
+/************768* sec6 benefit */
 #section6 .benefit_list{
     margin-top: 30px;
 }
@@ -1242,7 +1273,7 @@ input, button{
     }
     #section6 .benefit_list .txt {
         text-align: center;
-        font-size: 1.3rem;
+        font-size: 1.1rem;
         font-weight: 500;
         line-height: 1.3rem;
         margin-top: auto; 
@@ -1313,5 +1344,16 @@ input, button{
         /* text-align: center; */
         margin-bottom: 50px;
     }
+    #section5 .back {
+        background-image: url(../images/sec5_back.png);
+        height: 60vh;
+        /* background-size: 100%;
+        background-position: center;
+        background-attachment: fixed; */
+        /* background-repeat: no-repeat; */
+    }
+    #section5 span {
+        display: inline-block;
+      }
  
 }

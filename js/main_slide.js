@@ -5,8 +5,8 @@ $(function(){
         arrows: true,
         dots :true,
         autoplay : true,
-        autoplaySpeed : 3000,
-       
+        autoplaySpeed : 2600,
+       pauseOnHover : true,
         
       });
 })
