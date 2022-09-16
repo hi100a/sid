@@ -31,19 +31,59 @@
 <script src="js/best_item_slide.js"> </script>
 <script src="js/ingre_slick.js"> </script>
 <script src="js/popup.js"> </script>
+
+<!-- 팝업광고창 용 -->
+<script language="JavaScript">
+
+  function setCookie( name, value, expiredays ) {
+   var todayDate = new Date();
+    todayDate.setDate( todayDate.getDate() + expiredays );
+    document.cookie = name + "=" + escape( value ) + "; path=/; expires=" + todayDate.toGMTString() + ";"
+   }
+
+  function closePop() {
+   if ( document.pop_form.chkbox.checked ){
+    setCookie( "maindiv", "done" , 1 );
+   }
+   document.all['pop'].style.visibility = "hidden";
+  }
+  //--> 
+</script>
 </head>
 
 <body>
   <!----popup--->
-  <form name="notice_form">
-    <div id="divpop1" class="divpop">	
-      <div class="title_area"><img src="images/ad_popup.png"></div>
-       <div class="button_area">
-         <input type='checkbox' name='chkbox' id='todaycloseyn' value='Y'>오늘 하루 이 창을 열지 않음	
-         <a href='#' onclick="javascript:closeWin(1);"><B>[닫기]</B></a>
-       </div>
-    </div>
-  </form>
+
+    <div id="pop_up" class="pop">
+      <div class="img"><img src="images/ad_popup.png"></div>
+
+       <div class="btn">
+        <div class="oneday">
+          <form name="pop_form">
+            <div id="check">
+              <input type="checkbox" name="chkbox" value="checkbox">
+              오늘 하루 그만보기
+            </div>
+         
+        </form>
+        </div>
+        <div class="close">
+          <a href="javascript:closePop();">닫기 X</a>
+        </div>
+       </div><!--btn-->
+
+      </div>
+
+      <!--팝업 자바-->
+      <script language="Javascript">
+        cookiedata = document.cookie;   
+        if ( cookiedata.indexOf("maindiv=done") < 0 ){     
+         document.all['pop_up'].style.visibility = "visible";
+         }
+         else {
+          document.all['pop_up'].style.visibility = "hidden";
+        }
+      </script>
 
 
     <!------------- bars_click -------------->
@@ -198,7 +238,7 @@
      
         <ul class="gnb flex_ver_center">
           <li > <a href="#" data-src="#product">PRODUCT</a></li>
-          <li> <a href="#">BRAND</a></li>
+          <li > <a href="sub1.html" class="sub1">BRAND</a></li>
           <li > <a href="#"data-src="#review">REVIEW</a></li>
           <li > <a href="#"data-src="#cs" >CS CENTER</a></li>
           <li> <a href="#">EVENT</a></li>

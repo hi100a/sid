@@ -80,14 +80,34 @@ h3{
     transform: rotate(-45deg)  translate(35px,30px);
 }
 
+
 /*   ----popup--- */
-.divpop {
-    /* position: absolute;  */
-    z-index:999; top:50px; left:50px;
-    width:500px; height:520px;background-color:yellow;display:none;
+#pop_up  {
+    position: absolute;
+    z-index: 999;
+    top:10%; left: 10%;
+background-color: #333333;
+width:500px; height:530px;
 }
-.title_area {font-weight:bold;text-align:center;width:100%}
-.button_area {position:absolute;bottom:0;left:10px;} 
+
+#pop_up .btn{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width:500px;
+    line-height: 1.6rem;
+   color: #B1B1B1;
+   
+}
+#pop_up .btn .oneday{
+    margin-left: 10px;
+    color: #EAEAEA;
+}
+#pop_up .btn .close{
+    margin-right: 10px;
+    color: #898989;
+}
+
 
 /*********** bars_click********/
 
@@ -320,6 +340,7 @@ h3{
     margin: 0 20px;
     position: relative;
 }
+
 #header .gnb > li > a{
     font-family : 'Gmarket';  
     display: block;
@@ -328,6 +349,9 @@ h3{
     position: relative;
     font-weight: 700;
     color: #333333;
+}
+#header .gnb .sub1{
+    color: #86A614;
 }
 /* #header .gnb >li >a:hover{
     color:#86A614;
@@ -875,7 +899,7 @@ input, button{
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
-    margin: 0 auto;
+
     justify-content: center;
 }
 #section5 .brand .name .logo{
@@ -1315,8 +1339,64 @@ input, button{
     .inner{
         padding: 0 10px;
     }
+    h2 {
+        /* font-family: 'Gmarket';
+        font-style: normal;
+        font-weight: 700;
+        color: #333; */
+        font-size: 2.5rem;
+        line-height: 3rem;
+        
+    }
+    /*   ----popup--- */
+#pop_up  {
+    /* position: absolute;
+    z-index: 999;
+    background-color: #333333; */
+    top:2%; left: 50%;
+    transform: translateX(-50%);
+width:400px; height:425px;
+
+}
+#pop_up img{
+    width: 100%;
+}
+#pop_up .btn{
+    /* display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    line-height: 1.6rem;
+    color: #B1B1B1; */
+    width:400px;
+    flex-wrap: nowrap;
+
+}
+
     #bars_pop .login > p{
         display: none;
+    }
+
+    #bars_pop .login {
+        /* display: flex;
+        flex-wrap: no-wrap;
+        flex-direction: row; */
+        justify-content: flex-end;
+        margin-top: 10px;
+        /*
+        color: #B1B1B1;
+        padding-bottom: 20px;
+        border-bottom: 1px solid #B1B1B1; */
+    }
+    #section1 .main_slide_box .txt_box{
+        /* position: absolute;
+        top: 30%;
+        right: 15%;
+        display: flex;
+        flex-direction: column; */
+        right: -10px;
+        /* top:auto;
+        bottom:20%;
+        width: 100%; */
     }
     #section1 .main_slide_box .product {
         /* position: absolute;
@@ -1346,7 +1426,7 @@ input, button{
     }
     #section5 .back {
         background-image: url(../images/sec5_back.png);
-        height: 60vh;
+        height: 70vh;
         /* background-size: 100%;
         background-position: center;
         background-attachment: fixed; */
@@ -1356,4 +1436,5 @@ input, button{
         display: inline-block;
       }
  
+      
 }
