@@ -115,7 +115,7 @@ width:500px; height:530px;
     /* display: none; */
     position: fixed;
     top: 0; right: -100%;
-    z-index: 10;
+    z-index: 20;
     background-color: #fff;
     width: 100%;
     height: 100vh;
@@ -290,6 +290,25 @@ width:500px; height:530px;
 }
 #bars_pop .bot_sns p:hover{
     color: #86A614;
+}
+
+/*bot_sns_icon 아이콘  */
+
+#bars_pop .bot_sns_icon{
+    display: none;
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+    border-top: 1px solid #B1B1B1;
+}
+#bars_pop .bot_sns_icon p{
+    margin-top: 20px;
+}
+#bars_pop .bot_sns_icon p img{
+    filter: invert(76%) sepia(6%) saturate(18%) hue-rotate(323deg) brightness(99%) contrast(50%);
+}
+#bars_pop .bot_sns_icon p:hover{
+    filter: invert(57%) sepia(71%) saturate(518%) hue-rotate(32deg) brightness(91%) contrast(87%);
 }
 
 #bars_pop .bars_menu_function{
@@ -615,11 +634,18 @@ input, button{
 #section1 .main_slide_box .back img {
         height: 100%;
 }
-
+#section1 .main_slide_1 .back {
+    /* width: 100%; */
+    background-image: url(../images/sec1_mainslide_01.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    width: 1920px;
+    height: 768px;
+}
 #section1 .main_slide_box{
     position: relative;
     width: 100%;
-    background-color: red;
+    /* background-color: red; */
 }
 #section1 .main_slide_box .product{
     position: absolute;
@@ -632,6 +658,8 @@ input, button{
     height: 80vh;
     object-fit:contain;
 }
+
+
 #section1 .main_slide_box .txt_box{
     width: 40%;
     position: absolute;
@@ -640,6 +668,9 @@ input, button{
     display: flex;
     flex-direction: column;    
 }
+
+
+
 #section1 .main_slide_box .txt_box .eng{
     font-family : 'Gmarket';  
 }
@@ -666,7 +697,7 @@ input, button{
     bottom:2px;
 
     /* overflow: hidden; */
-    background-color: violet;
+    /* background-color: violet; */
    box-sizing: border-box;
 }
 #section1 .notice .notice_box{
@@ -983,13 +1014,16 @@ input, button{
 #footer{
     background-color: #333333;
     color: #fff;
+
 }
 #footer .footer_top {
+    display : grid;
+    grid-template-columns: 7fr 3fr;
     margin-top: 120px;
     padding-top: 50px;
 }
 #footer .footer_top .foot_left{
-    width: 70%;
+    order:1;
     padding-right: 20px;
     box-sizing: border-box;
 }
@@ -1009,7 +1043,7 @@ input, button{
     font-weight: 300;
 }
 #footer .footer_top .foot_right{
-    width: 30%;
+    order:2;
 }
 #footer .footer_top .foot_right .cs{
     line-height: 1.5rem;
@@ -1115,6 +1149,14 @@ input, button{
 
 /**************** mata 모바일  1000***********/
 @media all and (max-width:1000px) {
+    #section1  .main_slide_1 .back {
+        /* width: 100%; */
+        background-image: url(../images/sec1_mainslide_01_1000ver.jpg);
+        background-image: 100%;
+       
+        width: 100vw; 
+        background-size: cover;
+    }
     #section6 .benefit_list .icon {
         /* margin-top: 50px;
         position: relative;
@@ -1133,6 +1175,14 @@ input, button{
 @media all and (max-width:768px) {
     html{
         font-size: 14px;
+    }
+    #section1  .main_slide_1 .back {
+        /* width: 100%; */
+        background-image: url(../images/sec1_mainslide_01_768ver.jpg);
+        background-image: 100%;
+        /* height: 100vh;
+        width: 100vw; */
+        background-size: cover;
     }
     #section1 .main_slide_box .txt_box{
         /* position: absolute;
@@ -1165,7 +1215,7 @@ input, button{
 
     }
     #section1 .main_slide_box .txt_box .eng{
-        font-size: 5px;
+        font-size: 11px;
     }
  
     #section1 .main_slide_box .txt_box .tag{
@@ -1332,6 +1382,21 @@ input, button{
     #section6 .benefit a:hover .icon img{
         filter:  brightness(200%);
     }
+
+    #bars_pop .bot_sns_icon{
+        display: flex;
+        /* margin-top: 20px;
+        margin-left: 20px;
+        margin-right: 20px;
+        border-top: 1px solid #B1B1B1; */
+    }
+    #bars_pop .bot_sns{
+        display: none;
+        /* margin-top: 20px;
+        margin-left: 20px;
+        margin-right: 20px;
+        border-top: 1px solid #B1B1B1; */
+    }
 }
 
 /**************** mata 모바일 520***********/
@@ -1435,6 +1500,51 @@ width:400px; height:425px;
     #section5 span {
         display: inline-block;
       }
+      #footer .footer_top {
+        /* display : grid; */
+        grid-template-columns: 5fr 5fr;
+        /* margin-top: 120px;
+        padding-top: 50px; */
+    }
+    #footer .flex{
+        display: flex;
+        flex-direction: column;
+    }
+      #footer .footer_top .foot_left{
+        order:2;
+        /* padding-right: 20px;
+        box-sizing: border-box; */
+        margin-bottom: 50px;
+    }
+    
+    #footer .footer_top .foot_right{
+        order:1;
+        margin-bottom: 30px;
+    }
+
+    #footer .footer_top .foot_right .sns_icon_list p {
+        /* position: relative;
+        width: 38px;
+        height: 38px;
+        border: 1px solid #fff;
+        border-radius: 50%;
  
+        margin-right: 10px; */
+        margin-top: 10px;
+    }
+    #footer .footer_bot {
+        display: none;
+        /* background-color: #555;
+        margin-top: 70px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        font-size: 0.8rem; */
+    }
+    #footer .footer_top .foot_left .txt {
+        padding-top: 5px;
+        /* font-size: 0.8rem;
+        line-height: 1rem;
+        font-weight: 300; */
+    }
       
 }

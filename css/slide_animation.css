@@ -1,0 +1,32 @@
+/* #section1 .main_slide_box .slick-slide .slick-current .slick-active .product{
+    animation: 2s move3;
+    animation-fill-mode: forwards;
+}
+#section1 .main_slide_box  .slick-slide .slick-current .slick-active .txt_box{
+    animation: 2s move2;
+    animation-fill-mode: forwards;
+} */
+
+#section1 .slick-active  .product{
+    animation: 1.5s move3;
+    animation-fill-mode: forwards;
+}
+#section1  .slick-active  .txt_box{
+    animation: 1.5s move2;
+    animation-fill-mode: forwards;
+}
+
+
+
+@keyframes move1{
+    0%{transform: translateY(0); scale:120%; opacity: 0;}
+    100%{transform: translateY(20%); scale:100%;opacity: 1;}
+  }
+  @keyframes move2{
+    0%{transform: translateX(100%); opacity: 0;}
+    100%{transform: translateX(0); opacity: 1;}
+  }
+  @keyframes move3{
+    0%{transform: translateY(100%);opacity: 0;}
+    100%{transform: translateY(0);opacity: 1;}
+  }
