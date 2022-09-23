@@ -219,6 +219,10 @@ width:500px; height:530px;
 /* #header .bars_click .depth2_list{
     display: none;
 } */
+#bars_pop .brand{
+    text-decoration: underline;
+    text-underline-position: under; 
+}
 #bars_pop .depth1_list > li.link_on{
     display: block;
 }
@@ -371,6 +375,8 @@ width:500px; height:530px;
 }
 #header .gnb .sub1{
     color: #86A614;
+    /* text-decoration: underline;
+    text-underline-position: under;  */
 }
 /* #header .gnb >li >a:hover{
     color:#86A614;
@@ -892,9 +898,11 @@ input, button{
     background-image: url(../images/sec5_back.png);
     height: 80vh;
     background-size: 100%;
-    background-position: center;
+    /* background-position: center; */
     background-attachment: fixed;
-    /* background-repeat: no-repeat; */
+    background-repeat: no-repeat;
+    width: 100vw; 
+    background-size: cover;
 }
 #section5 .banner{
     margin: -10% auto 0;
