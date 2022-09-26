@@ -691,7 +691,7 @@ input, button{
     top:200px;
 }
 #section1 .main_slide_1 .txt_box h3 {
-    margin-bottom: 20px;
+    margin-bottom: 40px;
 }
 #section1 .main_slide_3, #section1 .main_slide_3 .main{
     color: #fff;
@@ -749,9 +749,15 @@ input, button{
     width: 50%;
     margin-top: 50px;
 }
+
 #section2 .content img{
     width: 90%;
     border-radius: 30px;
+}
+#section2 .img :hover img{
+    filter:brightness(0.7);
+
+    transition: 1s;
 }
 
 #section2 .content:nth-child(2) {
@@ -1155,6 +1161,8 @@ input, button{
 
 }
 
+
+
 /**************** mata 모바일  1000***********/
 @media all and (max-width:1000px) {
     #section1  .main_slide_1 .back {
@@ -1426,10 +1434,11 @@ input, button{
     /* position: absolute;
     z-index: 999;
     background-color: #333333; */
-    top:2%; left: 50%;
+    
+    /* top:2%; left: 50%;
     transform: translateX(-50%);
-width:400px; height:425px;
-
+    width:400px; height:425px; */
+    display: none;
 }
 #pop_up img{
     width: 100%;
@@ -1461,7 +1470,7 @@ width:400px; height:425px;
         border-bottom: 1px solid #B1B1B1; */
     }
     #section1 .main_slide_1 .txt_box h3 {
-        /* margin-bottom: 20px; */
+        margin-bottom: 20px;
         font-size: 2.3rem;
         line-height: 1.5em;
     }
